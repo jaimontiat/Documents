@@ -1,0 +1,26 @@
+"SSQ" "TVEHICLE" 1 "AUDIT" "FORM" "tvehicle.p" "Audit Method/Data" no no no "" "Active" no "External" 0 yes "" "Audit Method/Data" "" "" 0 "" 22325 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "CANCELUPDATE" "INPLACE" "" "Cancel" yes no no "" "Active" no "External" 3 no "/UPDATE" "Cancel" "" "" 2 "UPDATE" 22326 no "" yes "Cancel" "Cancel Update" no "" ""  
+"SSQ" "TVEHICLE" 1 "COPY" "NOCONFIRM" "" "Copy No Confirm" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "UPDATE" 22327 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "DELETE" "FORM" "" "Delete Form" yes no no "" "Active" no "External" 3 yes "*" "Delete" "" "" 40 "DELETE" 22328 no "" yes "Delete" "Delete" no "" ""  
+"SSQ" "TVEHICLE" 1 "DELETE" "INPLACE" "" "Delete Form" yes no no "" "Active" no "External" 3 yes "*" "Delete" "" "" 40 "DELETE" 22329 no "" yes "DELETE" "Delete" no "" ""  
+"SSQ" "TVEHICLE" 1 "DELETE" "JSP" "" "Delete" yes no no "" "Active" no "External" 3 no "" "Delete" "" "" 0 "DELETE" 22330 no "" no "Delete" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "DELETE" "NOCONFIRM" "" "Delete No Confirm" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "DELETE" 22331 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "DIFF" "NOCONFIRM" "tvehicle.p" "Difference" no no no "" "Active" no "External" 3 no "*" "" "" "" 20 "" 22332 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "GETATTRIB" "NOCONFIRM" "tvehicle.p" "Get Attribute" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "N/A" 22333 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "HELP" "DIALOG" "" "Help" yes no no "" "Active" no "External" 3 yes "*" "Help" "" "" 300 "" 22334 no "" yes "HELP" "Help" no "" ""  
+"SSQ" "TVEHICLE" 1 "NEW" "FORM" "tvehicle.p" "New Form" yes no no "" "Active" no "External" 3 yes "*" "New" "" "" 10 "NEW" 22335 no "" yes "NEW" "New" no "" ""  
+"SSQ" "TVEHICLE" 1 "NEW" "JSP" "" "New" yes no no "" "Active" no "External" 3 no "" "New" "" "" 0 "NEW" 22336 no "" no "New" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "NEW" "NOCONFIRM" "tvehicle.p" "New Confirm" no no no "" "Active" no "External" 3 no "" "" "" "" 0 "NEW" 22337 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "NEWVERSION" "NOCONFIRM" "tvehicle.p" "NEWVERSION-NOCONFIRM" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "UPDATE" 22338 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "OPEN" "FORM" "" "Open Form" yes no no "" "Active" no "External" 3 yes "*" "Open" "" "" 30 "UPDATE" 22339 no "" yes "Open" "Open" no "" ""  
+"SSQ" "TVEHICLE" 1 "OPEN" "INPLACE" "" "Open Form" yes no no "" "Active" no "External" 3 yes "*" "Open" "" "" 30 "UPDATE" 22340 no "" yes "Open" "Open" no "" ""  
+"SSQ" "TVEHICLE" 1 "SAVEUPDATE" "INPLACE" "" "Save" yes no no "" "Active" no "External" 3 no "/UPDATE" "Save" "" "" 1 "UPDATE" 22341 no "" yes "Save" "Save Update" no "" ""  
+"SSQ" "TVEHICLE" 1 "SAVEUPDATE" "JSP" "" "Save Update" yes no no "" "Active" no "External" 3 no "" "Save" "" "" 0 "UPDATE" 22342 no "" no "Save" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "SYSATTRIB" "NOCONFIRM" "tvehicle.p" "System Attribute" no no no "" "" no "External" 0 no "" "" "" "" 0 "" 22343 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "UPDATE" "NOCONFIRM" "tvehicle.p" "Update No Confirm" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "UPDATE" 22344 no "" no "" "" no "" ""  
+"SSQ" "TVEHICLE" 1 "VIEW" "FORM" "" "View Form" yes no no "" "Active" no "External" 3 yes "*" "View" "" "" 20 "" 22345 no "" yes "View" "View" no "" "" 

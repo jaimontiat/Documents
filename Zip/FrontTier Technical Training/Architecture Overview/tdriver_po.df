@@ -1,0 +1,127 @@
+ADD TABLE "tdriver_po"
+  AREA "busdata"
+  DESCRIPTION "Basic driver info; my first PO."
+  DUMP-NAME "tdriver_"
+
+ADD FIELD "businessobjectnum" OF "tdriver_po" AS decimal 
+  FORMAT ">>>>>>>>9"
+  INITIAL "0"
+  LABEL "Business Object #"
+  POSITION 2
+  SQL-WIDTH 17
+  DECIMALS 2
+  ORDER 10
+
+ADD FIELD "busobjsequence" OF "tdriver_po" AS integer 
+  FORMAT ">>>>>>>>9"
+  INITIAL "0"
+  LABEL "BO Sequence"
+  POSITION 3
+  SQL-WIDTH 4
+  ORDER 20
+
+ADD FIELD "objectnum" OF "tdriver_po" AS decimal 
+  FORMAT ">>>,>>>,>>9"
+  INITIAL "0"
+  LABEL "Object #"
+  POSITION 4
+  SQL-WIDTH 17
+  DECIMALS 2
+  ORDER 30
+
+ADD FIELD "company" OF "tdriver_po" AS character 
+  FORMAT "X(10)"
+  INITIAL ""
+  LABEL "CompanyID"
+  POSITION 5
+  SQL-WIDTH 20
+  ORDER 40
+  MANDATORY
+
+ADD FIELD "change_date" OF "tdriver_po" AS date 
+  FORMAT "99/99/9999"
+  INITIAL ?
+  LABEL "Date Changed"
+  POSITION 6
+  SQL-WIDTH 4
+  ORDER 50
+
+ADD FIELD "current_status" OF "tdriver_po" AS character 
+  FORMAT "x(15)"
+  INITIAL ""
+  LABEL "Status"
+  POSITION 7
+  SQL-WIDTH 30
+  ORDER 60
+
+ADD FIELD "description" OF "tdriver_po" AS character 
+  FORMAT "x(50)"
+  INITIAL ""
+  LABEL "Description"
+  POSITION 8
+  SQL-WIDTH 100
+  ORDER 70
+
+ADD FIELD "driver_name" OF "tdriver_po" AS character 
+  FORMAT "X(100)"
+  INITIAL ""
+  LABEL "Driver Name"
+  POSITION 9
+  SQL-WIDTH 200
+  COLUMN-LABEL "Name"
+  ORDER 80
+
+ADD FIELD "driver_license" OF "tdriver_po" AS character 
+  FORMAT "X(40)"
+  INITIAL ""
+  LABEL "License#"
+  POSITION 10
+  SQL-WIDTH 80
+  ORDER 90
+
+ADD FIELD "license_class" OF "tdriver_po" AS character 
+  FORMAT "X(5)"
+  INITIAL ""
+  LABEL "License Class"
+  POSITION 11
+  SQL-WIDTH 10
+  COLUMN-LABEL "Class"
+  ORDER 100
+
+ADD FIELD "license_year" OF "tdriver_po" AS integer 
+  FORMAT "9999"
+  INITIAL "0"
+  LABEL "Year"
+  POSITION 12
+  SQL-WIDTH 4
+  ORDER 110
+
+ADD FIELD "license_month" OF "tdriver_po" AS integer 
+  FORMAT "99"
+  INITIAL "0"
+  LABEL "Month"
+  POSITION 13
+  SQL-WIDTH 4
+  ORDER 120
+
+ADD FIELD "license_province" OF "tdriver_po" AS character 
+  FORMAT "X(8)"
+  INITIAL ""
+  LABEL "Province"
+  POSITION 14
+  SQL-WIDTH 16
+  ORDER 130
+
+ADD INDEX "newprimary" ON "tdriver_po" 
+  AREA "busindex"
+  UNIQUE
+  PRIMARY
+  INDEX-FIELD "businessobjectnum" ASCENDING 
+  INDEX-FIELD "busobjsequence" ASCENDING 
+  INDEX-FIELD "objectnum" ASCENDING 
+
+.
+PSC
+cpstream=ISO8859-1
+.
+0000002429

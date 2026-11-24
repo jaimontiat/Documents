@@ -1,0 +1,26 @@
+"SSQ" "TDRIVER" 1 "AUDIT" "FORM" "tdriver.p" "Audit Method/Data" no no no "" "Active" no "External" 0 yes "" "Audit Method/Data" "" "" 0 "" 22302 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "CANCELUPDATE" "INPLACE" "" "Cancel" yes no no "" "Active" no "External" 3 no "/UPDATE" "Cancel" "" "" 2 "UPDATE" 22303 no "" yes "Cancel" "Cancel Update" no "" ""  
+"SSQ" "TDRIVER" 1 "COPY" "NOCONFIRM" "" "Copy No Confirm" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "UPDATE" 22304 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "DELETE" "FORM" "" "Delete Form" yes no no "" "Active" no "External" 3 yes "*" "Delete" "" "" 40 "DELETE" 22305 no "" yes "Delete" "Delete" no "" ""  
+"SSQ" "TDRIVER" 1 "DELETE" "INPLACE" "" "Delete Form" yes no no "" "Active" no "External" 3 yes "*" "Delete" "" "" 40 "DELETE" 22306 no "" yes "DELETE" "Delete" no "" ""  
+"SSQ" "TDRIVER" 1 "DELETE" "JSP" "" "Delete" yes no no "" "Active" no "External" 3 no "" "Delete" "" "" 0 "DELETE" 22307 no "" no "Delete" "" no "" ""  
+"SSQ" "TDRIVER" 1 "DELETE" "NOCONFIRM" "" "Delete No Confirm" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "DELETE" 22308 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "DIFF" "NOCONFIRM" "tdriver.p" "Difference" no no no "" "Active" no "External" 3 no "*" "" "" "" 20 "" 22309 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "GETATTRIB" "NOCONFIRM" "tdriver.p" "Get Attribute" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "N/A" 22310 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "HELP" "DIALOG" "" "Help" yes no no "" "Active" no "External" 3 yes "*" "Help" "" "" 300 "" 22311 no "" yes "HELP" "Help" no "" ""  
+"SSQ" "TDRIVER" 1 "NEW" "FORM" "tdriver.p" "New Form" yes no no "" "Active" no "External" 3 yes "*" "New" "" "" 10 "NEW" 22312 no "" yes "NEW" "New" no "" ""  
+"SSQ" "TDRIVER" 1 "NEW" "JSP" "" "New" yes no no "" "Active" no "External" 3 no "" "New" "" "" 0 "NEW" 22313 no "" no "New" "" no "" ""  
+"SSQ" "TDRIVER" 1 "NEW" "NOCONFIRM" "tdriver.p" "New Confirm" no no no "" "Active" no "External" 3 no "" "" "" "" 0 "NEW" 22314 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "NEWVERSION" "NOCONFIRM" "tdriver.p" "NEWVERSION-NOCONFIRM" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "UPDATE" 22315 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "OPEN" "FORM" "" "Open Form" yes no no "" "Active" no "External" 3 yes "*" "Open" "" "" 30 "UPDATE" 22316 no "" yes "Open" "Open" no "" ""  
+"SSQ" "TDRIVER" 1 "OPEN" "INPLACE" "" "Open Form" yes no no "" "Active" no "External" 3 yes "*" "Open" "" "" 30 "UPDATE" 22317 no "" yes "Open" "Open" no "" ""  
+"SSQ" "TDRIVER" 1 "SAVEUPDATE" "INPLACE" "" "Save" yes no no "" "Active" no "External" 3 no "/UPDATE" "Save" "" "" 1 "UPDATE" 22318 no "" yes "Save" "Save Update" no "" ""  
+"SSQ" "TDRIVER" 1 "SAVEUPDATE" "JSP" "" "Save Update" yes no no "" "Active" no "External" 3 no "" "Save" "" "" 0 "UPDATE" 22319 no "" no "Save" "" no "" ""  
+"SSQ" "TDRIVER" 1 "SYSATTRIB" "NOCONFIRM" "tdriver.p" "System Attribute" no no no "" "" no "External" 0 no "" "" "" "" 0 "" 22320 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "UPDATE" "NOCONFIRM" "tdriver.p" "Update No Confirm" no no no "" "Active" no "External" 3 no "*
+" "" "" "" 0 "UPDATE" 22321 no "" no "" "" no "" ""  
+"SSQ" "TDRIVER" 1 "VIEW" "FORM" "" "View Form" yes no no "" "Active" no "External" 3 yes "*" "View" "" "" 20 "" 22322 no "" yes "View" "View" no "" "" 

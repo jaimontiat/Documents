@@ -1,0 +1,99 @@
+ADD TABLE "tquote_bo"
+  AREA "busdata"
+  DESCRIPTION "Very simple quote object"
+  DUMP-NAME "tquote_b"
+
+ADD FIELD "businessobjectnum" OF "tquote_bo" AS decimal 
+  FORMAT ">>>>>>>>9"
+  INITIAL "0"
+  LABEL "Business Object #"
+  POSITION 2
+  SQL-WIDTH 17
+  DECIMALS 2
+  ORDER 10
+
+ADD FIELD "busobjsequence" OF "tquote_bo" AS integer 
+  FORMAT ">>>>>>>>9"
+  INITIAL "0"
+  LABEL "BO Sequence"
+  POSITION 3
+  SQL-WIDTH 4
+  ORDER 20
+
+ADD FIELD "company" OF "tquote_bo" AS character 
+  FORMAT "X(10)"
+  INITIAL ""
+  LABEL "CompanyID"
+  POSITION 4
+  SQL-WIDTH 20
+  ORDER 30
+  MANDATORY
+
+ADD FIELD "change_date" OF "tquote_bo" AS date 
+  FORMAT "99/99/9999"
+  INITIAL ?
+  LABEL "Date Changed"
+  POSITION 5
+  SQL-WIDTH 4
+  ORDER 40
+
+ADD FIELD "current_status" OF "tquote_bo" AS character 
+  FORMAT "x(15)"
+  INITIAL ""
+  LABEL "Status"
+  POSITION 6
+  SQL-WIDTH 30
+  ORDER 50
+
+ADD FIELD "description" OF "tquote_bo" AS character 
+  FORMAT "x(50)"
+  INITIAL ""
+  LABEL "Description"
+  POSITION 7
+  SQL-WIDTH 100
+  ORDER 60
+
+ADD FIELD "effective_date" OF "tquote_bo" AS date 
+  FORMAT "99/99/9999"
+  INITIAL ?
+  LABEL "Effective Date"
+  POSITION 8
+  SQL-WIDTH 4
+  ORDER 70
+
+ADD FIELD "expiry_date" OF "tquote_bo" AS date 
+  FORMAT "99/99/9999"
+  INITIAL ?
+  LABEL "Expiry Date"
+  POSITION 9
+  SQL-WIDTH 4
+  ORDER 80
+
+ADD FIELD "quote_number" OF "tquote_bo" AS character 
+  FORMAT "x(60)"
+  INITIAL ""
+  LABEL "Quote #"
+  POSITION 10
+  SQL-WIDTH 120
+  ORDER 90
+
+ADD INDEX "newprimary" ON "tquote_bo" 
+  AREA "busindex"
+  UNIQUE
+  PRIMARY
+  INDEX-FIELD "businessobjectnum" ASCENDING 
+  INDEX-FIELD "busobjsequence" ASCENDING 
+
+ADD INDEX "effective_date" ON "tquote_bo" 
+  AREA "busindex"
+  INDEX-FIELD "effective_date" ASCENDING 
+
+ADD INDEX "quote_number" ON "tquote_bo" 
+  AREA "busindex"
+  INDEX-FIELD "quote_number" ASCENDING 
+
+.
+PSC
+cpstream=ISO8859-1
+.
+0000001912

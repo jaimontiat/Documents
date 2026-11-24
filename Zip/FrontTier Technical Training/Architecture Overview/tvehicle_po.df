@@ -1,0 +1,101 @@
+ADD TABLE "tvehicle_po"
+  AREA "busdata"
+  DESCRIPTION "Basich vehicle info"
+  DUMP-NAME "tvehicle"
+
+ADD FIELD "businessobjectnum" OF "tvehicle_po" AS decimal 
+  FORMAT ">>>>>>>>9"
+  INITIAL "0"
+  LABEL "Business Object #"
+  POSITION 2
+  SQL-WIDTH 17
+  DECIMALS 2
+  ORDER 10
+
+ADD FIELD "busobjsequence" OF "tvehicle_po" AS integer 
+  FORMAT ">>>>>>>>9"
+  INITIAL "0"
+  LABEL "BO Sequence"
+  POSITION 3
+  SQL-WIDTH 4
+  ORDER 20
+
+ADD FIELD "objectnum" OF "tvehicle_po" AS decimal 
+  FORMAT ">>>,>>>,>>9"
+  INITIAL "0"
+  LABEL "Object #"
+  POSITION 4
+  SQL-WIDTH 17
+  DECIMALS 2
+  ORDER 30
+
+ADD FIELD "company" OF "tvehicle_po" AS character 
+  FORMAT "X(10)"
+  INITIAL ""
+  LABEL "CompanyID"
+  POSITION 5
+  SQL-WIDTH 20
+  ORDER 40
+  MANDATORY
+
+ADD FIELD "change_date" OF "tvehicle_po" AS date 
+  FORMAT "99/99/9999"
+  INITIAL ?
+  LABEL "Date Changed"
+  POSITION 6
+  SQL-WIDTH 4
+  ORDER 50
+
+ADD FIELD "current_status" OF "tvehicle_po" AS character 
+  FORMAT "x(15)"
+  INITIAL ""
+  LABEL "Status"
+  POSITION 7
+  SQL-WIDTH 30
+  ORDER 60
+
+ADD FIELD "description" OF "tvehicle_po" AS character 
+  FORMAT "x(50)"
+  INITIAL ""
+  LABEL "Description"
+  POSITION 8
+  SQL-WIDTH 100
+  ORDER 70
+
+ADD FIELD "vehicle_year" OF "tvehicle_po" AS integer 
+  FORMAT "9999"
+  INITIAL "0"
+  LABEL "Vehicle Year"
+  POSITION 9
+  SQL-WIDTH 4
+  ORDER 80
+
+ADD FIELD "vehicle_make" OF "tvehicle_po" AS character 
+  FORMAT "x(30)"
+  INITIAL ""
+  LABEL "Make"
+  POSITION 10
+  SQL-WIDTH 60
+  ORDER 90
+
+ADD FIELD "vehicle_model" OF "tvehicle_po" AS character 
+  FORMAT "x(40)"
+  INITIAL ""
+  LABEL "Model"
+  POSITION 11
+  SQL-WIDTH 80
+  ORDER 100
+
+ADD INDEX "newprimary" ON "tvehicle_po" 
+  AREA "busindex"
+  UNIQUE
+  PRIMARY
+  INDEX-FIELD "businessobjectnum" ASCENDING 
+  INDEX-FIELD "busobjsequence" ASCENDING 
+  INDEX-FIELD "objectnum" ASCENDING 
+
+.
+PSC
+cpstream=ISO8859-1
+.
+0000001915

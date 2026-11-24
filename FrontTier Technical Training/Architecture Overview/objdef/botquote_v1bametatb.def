@@ -1,0 +1,6 @@
+"SSQ" "B/O" "TQUOTE" 1 " " "business_object_instance" "business_object_instance" "" "" no no ""  
+"SSQ" "B/O" "TQUOTE" 1 " " "business_object_premdetail" "PREMIUMDETAIL" "" "business_object_premium" no no "None, One or Many"  
+"SSQ" "B/O" "TQUOTE" 1 " " "business_object_premium" "PREMIUM" "" "business_object_totalprem" no no "None or One"  
+"SSQ" "B/O" "TQUOTE" 1 " " "business_object_premsummary" "PREMIUMSUMMARY" "" "business_object_totalprem" no no "None, One or Many"  
+"SSQ" "B/O" "TQUOTE" 1 " " "business_object_totalprem" "TOTALPREMIUM" "" "business_object_instance" no no "None or One"  
+"SSQ" "B/O" "TQUOTE" 1 " " "tquote_bo" "TQUOTE" "" "business_object_instance" yes no "One" 

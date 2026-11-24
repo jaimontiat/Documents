@@ -1,0 +1,4 @@
+"SSQ" "P/O" "TDRIVER" 1 " " "business_object_obj_inst" "business_object_obj_inst" "" "" no no ""  
+"SSQ" "P/O" "TDRIVER" 1 " " "business_object_obj_premdetail" "PREMIUMDETAIL" "" "business_object_obj_premium" no no "None, One or Many"  
+"SSQ" "P/O" "TDRIVER" 1 " " "business_object_obj_premium" "PREMIUM" "" "business_object_obj_inst" no no "None or One"  
+"SSQ" "P/O" "TDRIVER" 1 " " "tdriver_po" "TDRIVER" "" "business_object_obj_inst" yes no "One" 

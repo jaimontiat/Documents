@@ -1,0 +1,4 @@
+"SSQ" "TQUOTE" 1 "bbs-tquote.w" "SearchBrowser" "" "" "DEFAULT"  
+"SSQ" "TQUOTE" 1 "dbs-generic.w" "SearchDialog" "Search Dialog" "" "DEFAULT"  
+"SSQ" "TQUOTE" 1 "dbm-tquote.w" "UpdateDialog" "Update Dialog" "" "DEFAULT"  
+"SSQ" "TQUOTE" 1 "vbm-tquote.w" "Viewer" "" "" "DEFAULT" 
